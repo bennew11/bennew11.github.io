@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"> 
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="assets/js/dropit.js"></script>
+<link rel="stylesheet" href="assets/css/dropit.css" type="text/css" />
+<script type="text/javascript">
+$(document).ready(function () { 
+  
+  $('#nav li').hover(
+    function () {
+       $(this).css('background-color','gray');
+      
+      //show its submenu
+      $('ul', this).stop().slideDown(100);
+
+    }, 
+    function () {
+      $(this).css('background-color','black');
+      //hide its submenu
+      $('ul', this).stop().slideUp(100);      
+    }
+  );
+
+
+ $('#about').click(function(){
+  var about=1200
+  $(window).scrolltop(about);
+ }) 
+});
+  </script>
+
+
+</head>
+
+<body>
+
+<div id="wrapper" >
+
+<div id="logo_container" >
+  <div id="logo_header">
+    <img src="assets/images/cropped-logocircle2-1.png" class="img-scaled-wh" id="logo">
+      
+    <div id="logo_subheader">BBE Investment Club
+    </div>
+  </div>
+    <div id="topbar">
+          <ul id="nav" >
+            <li class="topmen"><a href="#" >Home</a></li>
+            <li class="topmen"><a href="#" >Join Us</a></li>
+            <li class="topmen" id="about">
+            About
+            <ul>
+                <li><a href="#">Some Action 1</a></li>
+                <li><a href="#">Some Action 2</a></li>
+                <li><a href="#">Some Action 3</a></li>
+                <li><a href="#">Some Action 4</a></li>
+            </ul>
+            <div class="clear">
+            </div>
+            </li>
+            <li class="topmen"> <a href="#">Contact</a></li>
+
+          </ul>
+      <div class="clear">
+      </div>
+    </div>
+    </div>
+    <div class="container1">
+          <img  class="img_background" src="assets/images/coolpic.jpg" >
+          <div id="bg_overlay" >
+          </div>
+
+
+<!-- Description elements -->
+
+      <div id="description_container" >
+        <div id="description_header">Consistent Income.</div>
+        <div id="description_text">XXXX Income Fund L.P. generates 8% annual returns with monthly payouts by leasing cars to ride-share app drivers such as Uber.</div>
+
+        
+      </div>
+        <div id="formstyle">
+          <div id="formcenter">
+            <form action="contact.php" method="post">
+              <input type="text" name="cf_email" value="Email">    
+              <input type="submit" value="Yes! Send Me Information on Earning 8%">
+            </form>
+          </div>
+        </div>
+    </div> 
+    <div class="container2">
+      <!--    <img  class="img_background" src="assets/images/coolpic.jpg" >
+          <div id="bg_overlay" >
+          </div> -->
+
+
+
+<!-- Description elements -->
+
+      <div id="description_container2" >
+        <div id="description_header2">How do we safely generate 8% returns?.</div>
+
+        <div id="poorfolks">
+          <img src="assets/images/bwgmobile.png" class="img-scaled-wh2" >
+        </div>
+
+        <div id="description_text2">
+          <p>Our strategy is very simple. We lease cars to Uber drivers and other rideshare service providers and then pass along the returns to you. The business of renting cars to car service drivers in New York City is a profitable niche business that has been around for decades.   </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container3">
+      <!--    <img  class="img_background" src="assets/images/coolpic.jpg" >
+          <div id="bg_overlay" >
+          </div> -->
+
+
+
+<!-- Description elements -->
+
+      <div id="description_container3" >
+        <div id="description_header3">Online Direct Income Investing</div>
+
+        <div id="poorfolks">
+          <img src="assets/images/bbe.png" class="img-scaled-wh2" >
+        </div>
+
+        <div id="description_text3">
+        <p>The CarService Fund, LP was developed to offer our fund exclusively through our platform directly to you the investor. Our approach reduces costs and bypasses banks and finance companies and passes the saving directly to you. </p>
+        <div><div>8%</div><div>MinInvest</div></div>
+        </div>
+      </div>
+    </div> 
+<!-- Description elements -->
+
+      <div id="description_container2" >
+       
+
+        <div id="poorfolks">
+          <img src="assets/images/bwgmobile.png" class="img-scaled-wh2" >
+        </div>
+        <div id="description_header2">Technology has Transformed the Business</div>
+        <div id="description_text2">
+          <p>The notion that high returns involve more risk is somewhat of a misconception. The reality in today's markets is that most institutions are simply keeping the vast majority of the profits for themselves and paying investors and deposit holders nothing. By going directly to you, the investor or deposit holder, we pass along the profits directly to you. Our strategy is very simple we rent cars to uber drivers and other rideshare service drivers and then pass along the returns to you. The business of renting cars to car service drivers in New York City is a niche that has been around for decades. Ridesharing apps like Uber are just another incarnation of a well established business.   </p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
