@@ -1,156 +1,266 @@
 <!doctype html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet"> 
 <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-<script src="assets/js/dropit.js"></script>
-<link rel="stylesheet" href="assets/css/dropit.css" type="text/css" />
-<script type="text/javascript">
-$(document).ready(function () { 
-  
-  $('#nav li').hover(
-    function () {
-       $(this).css('background-color','gray');
-      
-      //show its submenu
-      $('ul', this).stop().slideDown(100);
-
-    }, 
-    function () {
-      $(this).css('background-color','black');
-      //hide its submenu
-      $('ul', this).stop().slideUp(100);      
-    }
-  );
-
-
- $('#about').click(function(){
-  var about=1200
-  $(window).scrolltop(about);
- }) 
-});
-  </script>
+<script src="assets/js/myjs.js"></script>
 
 
 </head>
 
 <body>
 
-<div id="wrapper" >
+<div id="container" >
 
-<div id="logo_container" >
-  <div id="logo_header">
-    <img src="assets/images/cropped-logocircle2-1.png" class="img-scaled-wh" id="logo">
-      
-    <div id="logo_subheader">BBE Investment Club
-    </div>
+<header>
+    <nav id="navbar">
+      <h1 id="logo">Niles, LLC </h1>
+      <a class="burger-nav"></a>
+
+      <ul>
+        <li class="navbar-items" id="navbar-items-home"><a href="#">Home</a></li>
+        <li class="navbar-items" id="navbar-items-whyus"><a href="#">Why Us?</a></li>
+        <li class="navbar-items" id="navbar-items-work"><a href="#">How Does It Work?</a></li>
+        <li class="navbar-items" id="navbar-items-invest"><a href="#">Invest</a></li>
+        <li class="navbar-items" id="navbar-items-contact"><a href="#">Contact</a></li>
+      </ul>
+      <div class="clear"></div>
+    </nav>
+  </header>
+
+
+
+
+
+<section class="content" >
+  <div id="box banner" >
   </div>
-    <div id="topbar">
-          <ul id="nav" >
-            <li class="topmen"><a href="#" >Home</a></li>
-            <li class="topmen"><a href="#" >Join Us</a></li>
-            <li class="topmen" id="about">
-            About
-            <ul>
-                <li><a href="#">Some Action 1</a></li>
-                <li><a href="#">Some Action 2</a></li>
-                <li><a href="#">Some Action 3</a></li>
-                <li><a href="#">Some Action 4</a></li>
-            </ul>
-            <div class="clear">
-            </div>
-            </li>
-            <li class="topmen"> <a href="#">Contact</a></li>
 
-          </ul>
-      <div class="clear">
-      </div>
-    </div>
-    </div>
-    <div class="container1">
-          <img  class="img_background" src="assets/images/coolpic.jpg" >
-          <div id="bg_overlay" >
-          </div>
-
+  <div id="section-home" class="box container1">
+       <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
+          
+        </div>
+      <div id="bg_overlay" >
+          </div> 
 
 <!-- Description elements -->
 
-      <div id="description_container" >
-        <div id="description_header">Consistent Income.</div>
-        <div id="description_text">XXXX Income Fund L.P. generates 8% annual returns with monthly payouts by leasing cars to ride-share app drivers such as Uber.</div>
-
+      <div class="description_container" >
+        <div class="description_header"><p>Consistent Income.</p></div>
+        <div class="description_text"><p>XXXX Income Fund L.P. generates 8% annual returns with monthly payouts by leasing cars to ride-share app drivers such as Uber.</p></div>
         
       </div>
-        <div id="formstyle">
+      <!--  <div id="formstyle">
           <div id="formcenter">
             <form action="contact.php" method="post">
               <input type="text" name="cf_email" value="Email">    
               <input type="submit" value="Yes! Send Me Information on Earning 8%">
             </form>
           </div>
+        </div> -->
+  </div>
+
+<!-- how does it work -->
+<div  class="box container11">
+     <!--  <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
         </div>
-    </div> 
-    <div class="container2">
-      <!--    <img  class="img_background" src="assets/images/coolpic.jpg" >
+          
           <div id="bg_overlay" >
           </div> -->
 
-
-
 <!-- Description elements -->
 
-      <div id="description_container2" >
-        <div id="description_header2">How we do it.</div>
-
-        <div id="poorfolks">
-          <img src="assets/images/bwgmobile.png" class="img-scaled-wh2" >
-        </div>
-
-        <div id="description_text2">
-          <p>Our strategy is very simple. We lease cars to Uber drivers and other rideshare service providers and then pass along the returns to you. The business of renting cars to car service drivers in New York City is a profitable niche business that has been around for decades.   </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container3">
-      <!--    <img  class="img_background" src="assets/images/coolpic.jpg" >
-          <div id="bg_overlay" >
-          </div> -->
-
-
-
-<!-- Description elements -->
-
-      <div id="description_container3" >
-        <div id="description_header3">Online Direct Income Investing</div>
-
-        <div id="poorfolks">
-          <img src="assets/images/bbe.png" class="img-scaled-wh2" >
-        </div>
-
-        <div id="description_text3">
-        <p>The CarService Fund, LP was developed to offer our fund exclusively through our platform directly to you the investor. Our approach reduces costs and bypasses banks and finance companies and passes the saving directly to you. </p>
-        <div><div>8%</div><div>MinInvest</div></div>
-        </div>
-      </div>
-    </div> 
-<!-- Description elements -->
-
-      <div id="description_container2" >
+      <div class="description_container" >
+       <div class="description_header">What We Do</div> 
        
+      
+        <div class="description_text">Our approach is very simple we are a fund that leases cars to car service drivers in the New York metropolitan area. Monies raised by the fund are used to purchase cars that are leased to drivers. Drivers pay their leases and we pay you, monthly. Our fund is designed for investros who want reliable monthly income from a secured asset. Our target rate is 8% annualized returns.  </div>
 
-        <div id="poorfolks">
-          <img src="assets/images/bwgmobile.png" class="img-scaled-wh2" >
-        </div>
-        <div id="description_header2">Technology has Transformed the Business</div>
-        <div id="description_text2">
-          <p>The notion that high returns involve more risk is somewhat of a misconception. The reality in today's markets is that most institutions are simply keeping the vast majority of the profits for themselves and paying investors and deposit holders nothing. By going directly to you, the investor or deposit holder, we pass along the profits directly to you. Our strategy is very simple we rent cars to uber drivers and other rideshare service drivers and then pass along the returns to you. The business of renting cars to car service drivers in New York City is a niche that has been around for decades. Ridesharing apps like Uber are just another incarnation of a well established business.   </p>
-        </div>
+        
       </div>
-    </div>
 </div>
+
+      <!-- you invest -->
+<div  class="box container12">
+     <!--  <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
+        </div>
+          
+          <div id="bg_overlay" >
+          </div> -->
+
+<!-- Description elements -->
+
+      <div class="description_container" >
+        <div class="description_header">You Invest.</div>       
+        <div class="description_text">Meet our investor requirements and then invest. and we all iive happily ever after. Unless of course we dont</div>
+      </div>
+</div>
+
+<div class="box container13">
+     <!--  <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
+        </div>
+          
+          <div id="bg_overlay" >
+          </div> -->
+
+<!-- Description elements -->
+
+      <div class="description_container" >
+       <div class="description_header">We Purchase the Car</div>       
+        <div class="description_text">The fund purchases the car acquires liaiblity and collision insurance and meets all the regulatory reuqirements to get the car ready for the road. </div>
+  
+      </div>
+</div>
+<!-- Lease up -->
+<div class="box container14">
+     <!--  <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
+        </div>
+          
+          <div id="bg_overlay" >
+          </div> -->
+
+<!-- Description elements -->
+
+      <div class="description_container" >
+       <div class="description_header">We Lease The Car</div>       
+        <div class="description_text">We lease the car to qualified drivers. New York the dirvers must all be licensed by the TLC, the Taxi and Limosine Commission. </div>
+  
+      </div>
+</div>
+
+<!-- Lease up -->
+<div class="box container15">
+     <!--  <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
+        </div>
+          
+          <div id="bg_overlay" >
+          </div> -->
+
+<!-- Description elements -->
+
+      <div class="description_container" >
+       <div class="description_header">We pay you</div>       
+        <div class="description_text">Drivers typically pay their leases on a weekly basis and make payouts to inestors monthly. A $100,000 investment at our target rate of 8% a $100,000 investment would generate approximately $666.00, whereas the invesmtnet in a 1 year bank CD at toadys current rates of 1% would yield just $83.</div>
+  
+      </div>
+</div>
+
+   <div class="container2" id="section-whyus" class="box">
+     <!--  <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
+        </div>
+          
+          <div id="bg_overlay" >
+          </div> -->
+
+<!-- Description elements -->
+
+      <div class="description_container" >
+       <div class="description_header">WhyUs?</div> 
+       <div class="description_header">Compare Our Track Record To The SP500</div>
+        
+       <div id="imgcont2">
+          <img src="assets/images/bwgmobile.png" class="img-scaled-wh2-cont2">
+        </div>
+      
+        <div class="description_text">Nothing speaks louder than results. The fund has generated returns of 8% for investors for well over 5 years. </div>
+        
+      </div>
+
+      <div class="description_container" >
+        <div class="description_header">Livery Industry Expertise</div>
+        <div class="description_text">The general partner of the fund has the better part of a decade in the car service industry as a car service owner and driver. The livery industry within New York is highly regulated and requires an insiders knowledge to keep cars properly registered and driveable. Maintaining cars properly requires access to commercial insurance that is unique to the industry, the ability to source to qualified drivers, proper mechanical shops that specialize in TLC vehicles, and contacts TLC insider, attorneys that specialize in the car service industry, leasing attorneys, and collections specialists. He holds a “hack” license. Getting the  The TLC he utilies service providers that are </div>        
+      </div>
+
+      <div class="description_container" >
+        <div class="description_header">A Better Way To Invest</div>
+        <div class="description_text">Investing has never been easier. Behind the platform there is alot going on, but for you, the investor, earning great returns is as simple as ordering an Uber. Through our platform you can  easily check your capital account, add funds, request funds, and everything you need to manage your account. </div>        
+      </div>
+        
+  </div> 
+
+  <!-- How does it work?? -->
+
+  <div class="container3" class="box">
+     <!--  <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
+        </div>
+          
+          <div id="bg_overlay" >
+          </div> -->
+
+<!-- Description elements -->
+
+      <div class="description_container" >
+       <div class="description_header">How Does It Work?</div> 
+       
+      
+        <div class="description_text">Our approach is very simple we lease cars to car service drivers in the New York metropolitan area. Monies raised by the fund are used to purchase cars directly or as collateral to support the financing of cars. Drivers pay their leases weekly where the funds are often deducted from the accounts directly from the car services before driver has access to the funds. Rent receipts are then used to pay investors on a monthly basis when their bills are due. Our fund is designed to appeal to investors who are seeking steady monthly income with an annual return of 8%. </div>
+        
+      </div>
+       
+  </div> <!-- end containter1 -->
+
+  <!-- Invest -->
+
+  <div class="container4" id="section-invest" class="box">
+     <!--  <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
+        </div>
+          
+          <div id="bg_overlay" >
+          </div> -->
+
+<!-- Description elements -->
+
+      <div class="description_container" >
+
+        <div class="description_header">Invest</div> 
+        <div class="description_text">The fund is a limited partnership that pools the capital of many individuals to invest in a diversified pool of livery vehicles that are subsequently leased to qualified drivers or transportation companies affiliated with the general partner. Investors must be accredited. Before investing potential investors should thoroughly review the offering memorandum. To actually invest the investor should fill out the subscription agreement and make a check payable to the the Fund’s escrow account in an amount not less than the minimum amount as specified in the offering memorandum. Upon receipt of the funds the the investor will be assigned a capital account with a user id and a password.. </div>
+        
+      </div>
+       
+  </div> <!-- end containter1 -->
+
+  <!-- Contact -->
+
+  <div class="container5" id="section-contact" class="box">
+     <!--  <div id="poorfolks">
+          <img src="assets/images/coolpic.jpg" class="img-scaled-wh2" >
+        </div>
+          
+          <div id="bg_overlay" >
+          </div> -->
+
+<!-- Description elements -->
+
+      <div class="description_container" >
+
+        <div class="description_header">Contact</div> 
+        <div class="description_text">W Bennett
+Email: wab@xxxx.com
+Address: 244 5th Avenue, unit A292, NY, NY 10001
+Phone: 347-687-9746
+ </div>
+        
+      </div>
+       
+  </div> <!-- end containter1 -->
+
+
+</section>
+<!-- <aside class="content" id="bio">k</aside> -->
+<div class="clear"></div>
+
+</div> <!-- close container -->
 
 
 
